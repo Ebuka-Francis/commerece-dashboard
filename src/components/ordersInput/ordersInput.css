@@ -1,0 +1,19 @@
+.search-Container {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #BDBDBD;
+    background-color: #fff;
+    padding-inline: 10px;
+    align-items: center;
+
+}
+.search-Container img {
+ width: 20px;
+ height: 20px;
+ background-color: #fff;
+}
+.search-Container input {
+    border: none;
+    background-color: #fff;
+}

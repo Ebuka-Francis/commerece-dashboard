@@ -1,0 +1,33 @@
+.sideNav-container {
+    background-color: #1D1D1D;
+    width: 360px;
+    height: 100vh;
+}
+.top-logo {
+    height: 55px;
+    border: 1px solid #FAF4FD1A;
+    color: #fff;
+    padding: 24px;
+   
+}
+.top-logo h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.dashboard {
+    display: flex;
+    padding: 24px;
+    gap: 15px;
+}
+.sideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 10px;
+    height: 100px;
+}
+.sideNav a {
+  color: #BDBDBD;
+  text-decoration: none;
+}
