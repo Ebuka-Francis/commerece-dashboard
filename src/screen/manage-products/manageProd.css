@@ -1,0 +1,39 @@
+.container{
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.Gen-container{
+    width: 100%;
+}
+table tr {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    color: #bdbdbd;
+    justify-content: space-around;
+    border-bottom: 1px solid #6691e914;
+    padding: 10px;
+  }
+  table td {
+    color: #000;
+    font-size: 14px;
+  }
+  
+  table {
+    width: 100%;
+    background-color: #fff;
+  }
+  table th {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .items-button {
+      display: flex;
+      gap: 10px;
+      align-items: flex-end ;
+  }

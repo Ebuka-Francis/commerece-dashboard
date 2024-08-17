@@ -1,11 +1,13 @@
 .search-Container {
     display: flex;
-    width: 200px;
-    height: 40px;
-    border: 1px solid #BDBDBD;
+    width: 25%;
+    height: 45px;
+    border: 1px solid  #6691e914;
     background-color: #fff;
     padding-inline: 10px;
     align-items: center;
+    justify-content: space-between;
+    border-radius: 4px ;
 
 }
 .search-Container img {
@@ -16,4 +18,6 @@
 .search-Container input {
     border: none;
     background-color: #fff;
+    height:30px;
+    outline: none;
 }

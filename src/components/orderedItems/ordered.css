@@ -1,6 +1,45 @@
-.test {
-display: flex;
-gap: 60px;
-align-items: center;
-color: #BDBDBD;
+table tr {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  color: #bdbdbd;
+  justify-content: space-around;
+  border-bottom: 1px solid #6691e914;
+  padding: 10px;
+}
+table td {
+  color: #000;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+}
+table th {
+  font-weight: 300;
+  font-size: 14px;
+}
+.items-button {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end ;
+}
+.button-ship {
+  background-color: #2F6A56;
+  color: #fff;
+  font-size: 14px;
+  border:none;
+  border-radius: 2px;
+  padding: 5px;
+  /* width: 55px; */
+
+}
+.button-cancel {
+  background-color: #E9E9E9;
+  color:#4F4F4F;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
 }

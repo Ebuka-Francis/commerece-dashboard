@@ -11,5 +11,6 @@
     margin-top: 47px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
+    width: 100%;
 }

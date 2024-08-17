@@ -4,10 +4,19 @@
     width: 100%;
     padding: 15px;
     box-shadow: 1px 1px 0px 0px #5C688014;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }   
 .topnav-container h4 {
     color: #2F6A56;
     font-size: 16px;
     font-weight: 600;
 }
-
+.menu {
+    color: black;
+    display: none;
+}
+@media screen and (max-width:600px) {
+    
+}
