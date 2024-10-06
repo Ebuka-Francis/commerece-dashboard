@@ -1,5 +1,8 @@
 .orders-container {
     background-color: #F7F6F6;
+    overflow-x: hidden;
+    /* overflow: scroll; */
+    height: 100vh;
     display: flex; 
     flex-direction: column;
     width: 90%;
