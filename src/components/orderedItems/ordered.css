@@ -1,9 +1,9 @@
 table tr {
   display: flex;
-  gap: 60px;
+  gap: 10px;
   align-items: center;
   color: #bdbdbd;
-  justify-content: space-around;
+  justify-content: start;
   border-bottom: 1px solid #6691e914;
   padding: 10px;
 }
@@ -42,4 +42,11 @@ table th {
   border: none;
   border-radius: 2px;
   padding: 5px;
+}
+.items-each {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
 }

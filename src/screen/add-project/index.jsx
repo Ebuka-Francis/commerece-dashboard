@@ -18,9 +18,10 @@ export default function AddProduct() {
     <div className="add-container">
       <TopNav title="Add Product" />
       <div className="add-product">
+          <form className='add-product' action="">
         <div className="gen-infor">
           <h4>General information</h4>
-          <form action="">
+          <div className='form-conatiner'>
             <div className="cont">
               <label htmlFor="name" className="label-class">
                 <span>
@@ -39,14 +40,14 @@ export default function AddProduct() {
               </label>
               <ReactQuill theme="snow" value={value} onChange={setValue} />
             </div>
-          </form>
+          </div>
           <button type="submit">Save</button>
         </div>
         <label htmlFor=""></label>
 
         <div className="uploads">
           <h4>Upload File</h4>
-          <form action="">
+          {/* <form action=""> */}
             <label htmlFor="file-upload" className="image-label">
               <div className="upload-cont">
                 <img src="/vector (14).png" alt="cross-images" />
@@ -54,7 +55,7 @@ export default function AddProduct() {
               </div>
             </label>
             <input id="file-upload" type="file" accept="image/*" />
-          </form>
+          {/* </form> */}
           <div className="upload-info">
             <img src="/warning_amber.png" alt="" />
             <p>
@@ -63,6 +64,7 @@ export default function AddProduct() {
             </p>
           </div>
         </div>
+          </form>
       </div>
     </div>
   );

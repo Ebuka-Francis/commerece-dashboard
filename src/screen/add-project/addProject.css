@@ -1,5 +1,7 @@
 .add-container{
     width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
 }
 .add-product {
     max-width: 1000px;
@@ -20,6 +22,10 @@
     color: #BDBDBD;
 }
 form {
+    width: 99%;
+ 
+}
+.form-conatiner {
     width: 99%;
     display: flex;
     flex-direction: column;

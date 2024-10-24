@@ -9,6 +9,9 @@
 }
 .Gen-container{
     width: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
 }
 table tr {
     display: flex;

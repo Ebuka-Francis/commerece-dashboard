@@ -2,14 +2,16 @@
 import "./ordered.css";
 import { OrderedItems } from "@/datas/data";
 
+
 export default function OrderedProducts({ datas }) {
   const dataArrays = Object.keys(datas).map((key) => ({
     id: key,
     ...datas[key],
   }));
+  
 
 
-  const tableHead = ["", "Product Name", "Order date", "Price", "Action"];
+  const tableHead = ["", "Product Name", "Price",  "Action"];
   // const numbs = [1, 2,3,4,5,6,7,]
   return (
     <div>
@@ -17,43 +19,29 @@ export default function OrderedProducts({ datas }) {
         <tr className="test">
           {tableHead.map((dat) => (
             <th>{dat}</th>
+          
           ))}
         </tr>
 
-        {OrderedItems.map((item, idx) => (
-          <tr key={idx}>
-            <td>{item.name}</td>
-            <td>{item.date}</td>
-            <td>{item.price}</td>  
-            <td className="items-button">
-              <button className="button-ship" onClick> {item.ship}</button>
-              <button className="button-cancel">{item.cancel}</button>
-            </td>
-          </tr>
-        ))}
-      </table>
-      {/* <table> */}
 
       {dataArrays.map((item) => (
-        <table key={item.id} >
+        <div className="items-each" key={item.id} >
           {item.items.map((itx) => (
             // <p>{itx.title}</p>
             <tr key={item.id}>
-              <td>{itx.id}</td>
               <td> {itx.title} </td>
-              <td>{itx.price}</td>
-              <td>{itx.description}</td>
-              <td></td>
+              {/* <td>may 4th 2024</td> */}
+             <td>{itx.price}</td>
             </tr>
           ))}
-        </table>
+          <div className='items-button'>
+          <button className="button-ship">Ship</button>
+          <button className="button-cancel">Cancel</button>
+          </div>
+        </div>
       ))}
-      {/* </table> */}
-      {datas.map((itm) => (
-       <div key={itm.id} >{itm.items.map((ite,idx) => <p key={idx}>{ite.title}</p> )}</div> 
-      ))
 
-      }
+      </table>
     </div>
   );
 }
